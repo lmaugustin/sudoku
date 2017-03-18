@@ -11,12 +11,12 @@ clean:
 	rm -f *~ sudoku
 
 commit:
-	git commit -m "Update" *.h *.cpp Makefile
+	git commit -m "Update" *.h *.cpp Makefile sudoku-games.txt README.md
 
 pull:
 	-make commit
-	git pull https://github.com/lmaugustin/sudoku
+	git pull sudoku master
 
 push:
 	-make pull
-	git push
+	git push sudoku
