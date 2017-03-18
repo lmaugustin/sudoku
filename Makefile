@@ -18,5 +18,5 @@ pull:
 	git pull https://github.com/lmaugustin/sudoku
 
 push:
-	make pull
+	-make pull
 	git push
